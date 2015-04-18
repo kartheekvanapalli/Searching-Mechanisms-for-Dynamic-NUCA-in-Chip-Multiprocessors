@@ -16,9 +16,6 @@
 #include "stats.h"
 #include "hashmap.h"
 #include "flush.h"
-/*
- * 
- */
 
 
 /* execution start/end times */
