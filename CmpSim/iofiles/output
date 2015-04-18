@@ -1,0 +1,39 @@
+Number of cores in the system : 16 
+cache size : 8 MB 
+cache line size : 64 Bytes 
+bank set associativity : 32 
+bank associativity : 8 
+
+lines accessed : 7030258
+
+Linear Search Results
+
+hits : 6533566
+misses : 496718
+replacements : 991622
+
+misses for all the banks: 15521426
+hops (search requests) : 22054992
+block movements : 0
+
+
+HK-NUCA Results
+
+hits : 6717283
+misses : 313001
+replacements : 622030
+
+misses for all the banks: 191235636
+hops (search requests) : 197952919
+block movements : 5921936
+
+
+HKState-NUCA Results
+
+hits : 6745163
+misses : 285121
+replacements : 567836
+
+misses for all the banks: 19209078
+hops (search requests) : 25954241
+block movements : 1166890
