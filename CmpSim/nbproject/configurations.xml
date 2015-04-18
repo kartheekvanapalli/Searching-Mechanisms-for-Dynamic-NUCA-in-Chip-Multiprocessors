@@ -4,6 +4,13 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>cachebank.h</itemPath>
+      <itemPath>config.h</itemPath>
+      <itemPath>coreconfig.h</itemPath>
+      <itemPath>flush.h</itemPath>
+      <itemPath>global.h</itemPath>
+      <itemPath>hashmap.h</itemPath>
+      <itemPath>stats.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,7 +19,14 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>cachebank.c</itemPath>
+      <itemPath>config.c</itemPath>
+      <itemPath>coreconfig.c</itemPath>
+      <itemPath>flush.c</itemPath>
+      <itemPath>hashmap.c</itemPath>
       <itemPath>main.c</itemPath>
+      <itemPath>stats.c</itemPath>
+      <itemPath>temp.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -25,6 +39,12 @@
                    kind="IMPORTANT_FILES_FOLDER">
       <itemPath>Makefile</itemPath>
     </logicalFolder>
+    <itemPath>Saved Results/cache-vips-addr</itemPath>
+    <itemPath>input</itemPath>
+    <itemPath>input1</itemPath>
+    <itemPath>input2</itemPath>
+    <itemPath>output</itemPath>
+    <itemPath>iofiles/temp</itemPath>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -32,11 +52,56 @@
       <toolsSet>
         <compilerSet>default</compilerSet>
         <dependencyChecking>true</dependencyChecking>
-        <rebuildPropChanged>false</rebuildPropChanged>
+        <rebuildPropChanged>true</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibStdlibItem>PosixThreads</linkerLibStdlibItem>
+          </linkerLibItems>
+        </linkerTool>
       </compileType>
+      <item path="Saved Results/cache-vips-addr" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cachebank.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="cachebank.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="coreconfig.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="coreconfig.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="flush.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="flush.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="global.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="hashmap.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="hashmap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="input" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="input1" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="input2" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="iofiles/temp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="output" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="stats.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="stats.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="temp.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -59,7 +124,47 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Saved Results/cache-vips-addr" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="cachebank.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="cachebank.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="config.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="config.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="coreconfig.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="coreconfig.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="flush.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="flush.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="global.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="hashmap.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="hashmap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="input" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="input1" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="input2" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="iofiles/temp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="output" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="stats.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="stats.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="temp.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>

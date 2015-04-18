@@ -1,39 +1,48 @@
+TimeStamp : Sat Apr 18 19:39:35 2015
+Input data
+------------------------------------------------------------
 Number of cores in the system : 16 
 cache size : 8 MB 
 cache line size : 64 Bytes 
 bank set associativity : 32 
 bank associativity : 8 
 
-lines accessed : 7030258
 
+------------------------------------------------------------
+Results for two basic algorithms & my algorithm (HKState-NUCA)
+------------------------------------------------------------
+cache lines accessed : 4015943
+
+
+------------------------------------------------------------
 Linear Search Results
+------------------------------------------------------------
+hits : 2645244
+misses : 1370877
+replacements : 2739642
 
-hits : 6533566
-misses : 496718
-replacements : 991622
-
-misses for all the banks: 15521426
-hops (search requests) : 22054992
+misses for all the banks: 37242674
+hops (search requests) : 39887918
 block movements : 0
 
-
+------------------------------------------------------------
 HK-NUCA Results
+------------------------------------------------------------
+hits : 3920499
+misses : 95622
+replacements : 187491
 
-hits : 6717283
-misses : 313001
-replacements : 622030
+misses for all the banks: 109943142
+hops (search requests) : 113863641
+block movements : 3792184
 
-misses for all the banks: 191235636
-hops (search requests) : 197952919
-block movements : 5921936
-
-
+------------------------------------------------------------
 HKState-NUCA Results
+------------------------------------------------------------
+hits : 3913187
+misses : 102934
+replacements : 203170
 
-hits : 6745163
-misses : 285121
-replacements : 567836
-
-misses for all the banks: 19209078
-hops (search requests) : 25954241
-block movements : 1166890
+misses for all the banks: 36957813
+hops (search requests) : 40871000
+block movements : 2887192

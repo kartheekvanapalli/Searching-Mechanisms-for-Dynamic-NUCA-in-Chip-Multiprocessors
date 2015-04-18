@@ -35,7 +35,14 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/cachebank.o \
+	${OBJECTDIR}/config.o \
+	${OBJECTDIR}/coreconfig.o \
+	${OBJECTDIR}/flush.o \
+	${OBJECTDIR}/hashmap.o \
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/stats.o \
+	${OBJECTDIR}/temp.o
 
 
 # C Compiler Flags
@@ -62,10 +69,45 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cmpsim: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/cmpsim ${OBJECTFILES} ${LDLIBSOPTIONS}
 
+${OBJECTDIR}/cachebank.o: cachebank.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/cachebank.o cachebank.c
+
+${OBJECTDIR}/config.o: config.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/config.o config.c
+
+${OBJECTDIR}/coreconfig.o: coreconfig.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/coreconfig.o coreconfig.c
+
+${OBJECTDIR}/flush.o: flush.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/flush.o flush.c
+
+${OBJECTDIR}/hashmap.o: hashmap.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/hashmap.o hashmap.c
+
 ${OBJECTDIR}/main.o: main.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.c
+
+${OBJECTDIR}/stats.o: stats.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/stats.o stats.c
+
+${OBJECTDIR}/temp.o: temp.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/temp.o temp.c
 
 # Subprojects
 .build-subprojects:
