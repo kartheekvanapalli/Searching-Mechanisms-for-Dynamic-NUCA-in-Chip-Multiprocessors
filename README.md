@@ -1,5 +1,27 @@
-# Smart-Searching-in-DNUCA
+# Searching Mechanisms for Dynamic NUCA in Chip Multiprocessors - HKState-NUCA (Home Knows where to find data and its state within the NUCA cache)
+#Abstract
+Rapid growth in the cache sizes of Chip Multiprocessors (CMPs) will lead to increase in wire-
+delays and unexpected access latencies. Non-uniform access latencies to on-chip caches led to
+Non-Uniform Cache Architecture (NUCA) design, but to get data proximity features we need
+to map data blocks dynamically to banks and migration of data blocks. Because of dynamic
+mapping and migration schemes employed by D-NUCA we can’t keep track of data blocks.
+In D-NUCA mapping and migration schemes, increasing data proximity which reduces access
+latencies, but if we don’t have good searching mechanism for a data block in NUCA cache we
+strain ourselves in searching whole cache in case of a miss. So in order to get maximum benefit
+from D-NUCA we need an efficient searching mechanism.
 
+In my paper i discussed existing searching mechanisms and highlighted overheads and
+limitations to those algorithms. I proposed a novel searching algorithm for D-NUCA designs
+in CMPs, which is called HKState-NUCA (Home Knows where to find data and its state
+within the NUCA cache). This algorithm provides fast and power efficient access to data lines
+than many of the existing searching mechanisms. We have shown that using HKState-NUCA
+as data search mechanism in a D-NUCA design reduces search requests (hop count) about
+50.89%, and achieves an average performance improvement of 7.04% compared to HK-NUCA
+searching algorithm by introducing 0.8% space overhead.
+
+
+
+# About the Simulator created for comparing my algorithm (HKState-NUCA) with other algorithms
 I created a virtual standalone simulator called CmpSim in C, which is similar to some
 prior simulators like SimpleSim , Multi2Sim , GEMS , CACTI etc. But CmpSim
 doesn’t simulate data and instructions, it will take addresses specific to each core from different
